@@ -1,0 +1,40 @@
+{
+  "name": "Yowoo-COM",
+  "version": "0.0.0",
+  "authors": [
+    "Hank <S340331@sinyi.com.tw>"
+  ],
+  "description": "Web app for Yowoo COM",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "groupchat",
+    "com",
+    "yowoo"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.22",
+    "angular-route": "~1.4.8",
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angular-loading-bar": "~0.8.0",
+    "angular-local-storage": "~0.2.3",
+    "ng-dialog": "~0.5.6",
+    "underscore": "~1.8.3",
+    "restangular": "~1.5.1",
+    "ng-file-upload": "~10.0.2",
+    "ng-file-upload-shim": "~10.0.2",
+    "angular-bootstrap": "~0.14.3"
+  }
+}

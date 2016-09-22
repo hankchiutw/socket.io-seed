@@ -1,0 +1,28 @@
+<div class="login-wrapper">
+
+    <div class="login-field">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 align-center">
+                    <img src="/img/logo-login.png" class="login-logo" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 align-center">
+                    <p><input class="login-input" placeholder="請輸入您的帳號" ng-model="username" ng-model-options="{debounce:300}" ng-keypress="tryLogin($event)"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 align-center">
+                    <p><input class="login-input" placeholder="請輸入您的密碼" type="password" ng-model="password" ng-model-options="{debounce:100}" ng-keypress="tryLogin($event)"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 align-center">
+                    <p ng-click="login()" class="login-input submit">登入</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-controller="mainController">
+<head lang="en">
+    <meta charset="UTF-8">
+
+	<title>socket.io-seed</title>
+
+	<!-- meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.4.0/css/ngDialog.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.4.0/css/ngDialog-theme-default.min.css">
+	<link rel="stylesheet" href="/css/main.css">
+
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="icon" href="/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+	<!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+
+</head>
+<body ng-cloak>
+
+    <div ui-view class="view-wrapper">
+		<div class="loading-wrapper on"><img src="/img/loading.gif" /></div>
+    </div>
+
+	<!-- notification widget -->
+	<div class="loading-wrapper" ng-class="{on: status.isLoading }"><img src="/img/loading.gif" /></div>
+	<div class="message-wrapper" ng-class="{on: status.message }">{{status.message}}</div>
+
+	<script data-main="/js/config" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.22/require.min.js"></script>
+</body>
+</html>
